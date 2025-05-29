@@ -56,7 +56,7 @@ export default function ComingSoon() {
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = async (data: FormData) => {
+  const onSubmit = async () => {
     try {
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1500));
@@ -69,6 +69,7 @@ export default function ComingSoon() {
         setIsModalOpen(false);
       }, 5000);
     } catch (error) {
+       console.error(error); // use the error
       setSubmitMessage('Something went wrong. Please try again.');
       setIsSuccess(false);
     }
@@ -91,7 +92,7 @@ export default function ComingSoon() {
           Something Big is Coming!
         </h1>
         <p className="text-xl text-gray-600 leading-relaxed mb-8">
-          We're building something extraordinary. Join our waitlist to be the first to experience it when we launch!
+          We are building something extraordinary. Join our waitlist to be the first to experience it when we launch!
         </p>
         <motion.button
           onClick={() => setIsModalOpen(true)}

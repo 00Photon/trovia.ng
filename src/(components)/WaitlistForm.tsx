@@ -59,7 +59,7 @@ const WaitlistForm: React.FC = () => {
     },
   });
 
-  const onSubmit = async (data: FormData) => {
+  const onSubmit = async () => {
     try {
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1500));
@@ -73,6 +73,7 @@ const WaitlistForm: React.FC = () => {
         setIsSuccess(false);
       }, 5000);
     } catch (error) {
+       console.error(error); // use the error
       setSubmitMessage('Something went wrong. Please try again.');
       setIsSuccess(false);
     }
