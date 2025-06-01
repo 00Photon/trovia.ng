@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
               <div className="w-10 h-10 bg-gradient-to-br from-green-400 to-blue-500 rounded-lg transform rotate-12 mr-3"></div>
-              <span className="text-2xl font-bold">Hirings</span>
+              <span className="text-2xl font-bold">Trovia.ng</span>
             </div>
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
               Connecting the best talent with amazing opportunities. Find your perfect match in our thriving community of professionals and innovative companies.

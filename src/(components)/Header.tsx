@@ -31,46 +31,40 @@ const Header: React.FC = () => {
             >
               Home
             </Link>
+             <Link 
+              href="/hire-artisan" 
+              className="text-gray-500 font-medium hover:text-gray-700 transition-colors"
+            >
+              Hire Artisan
+            </Link>
+             <Link 
+              href="/post-job" 
+              className="text-gray-500 font-medium hover:text-gray-700 transition-colors"
+            >
+              Post Jobs
+            </Link>
+             <Link 
+              href="/marketplace" 
+              className="text-gray-500 font-medium hover:text-gray-700 transition-colors"
+            >
+              MarketPlace
+            </Link>
             <Link 
               href="/pricing" 
               className="text-gray-500 font-medium hover:text-gray-700 transition-colors"
             >
-              Pricing
+           Pricing
             </Link>
-            <Link 
-              href="/features" 
-              className="text-gray-500 font-medium hover:text-gray-700 transition-colors"
-            >
-              Features
-            </Link>
-            <div className="relative group">
-              <button className="flex items-center text-gray-500 font-medium hover:text-gray-700 transition-colors">
-                Use Case
-                <svg 
-                  className="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-            </div>
+           
           </nav>
 
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <Link 
-              href="/login" 
-              className="text-gray-700 font-medium hover:text-gray-900 transition-colors"
-            >
-              Login
-            </Link>
-            <Link 
-              href="/signup" 
+              href="/coming-soon" 
               className="bg-yellow-300 hover:bg-yellow-400 text-gray-900 font-medium px-6 py-2 rounded-lg transition-colors"
             >
-              Sign up
+             Smart System
             </Link>
           </div>
 
